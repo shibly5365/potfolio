@@ -5,12 +5,15 @@ interface ProjectDetailsActionsProps {
   isDark: boolean;
   liveUrl: string;
   githubUrl: string;
+  showDemo?: boolean;
 }
 
 const ProjectDetailsActions: React.FC<ProjectDetailsActionsProps> = ({
   isDark,
   liveUrl,
   githubUrl,
+  showDemo,
+
 }) => {
   const handleExternalNavigate = (url: string) => {
     if (!url || url === "#") return;
@@ -19,17 +22,19 @@ const ProjectDetailsActions: React.FC<ProjectDetailsActionsProps> = ({
 
   return (
     <div className="flex flex-col sm:flex-row gap-3">
-      <button
-        type="button"
-        onClick={() => handleExternalNavigate(liveUrl)}
-        className={`inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold ${
-          isDark
-            ? "bg-yellow-400 text-black hover:bg-yellow-300"
-            : "bg-blue-600 text-white hover:bg-blue-700"
-        }`}
-      >
-        <FaExternalLinkAlt /> Live Demo
-      </button>
+{showDemo && (
+  <button
+    type="button"
+    onClick={() => handleExternalNavigate(liveUrl)}
+    className={`inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold ${
+      isDark
+        ? "bg-yellow-400 text-black hover:bg-yellow-300"
+        : "bg-blue-600 text-white hover:bg-blue-700"
+    }`}
+  >
+    <FaExternalLinkAlt /> Live Demo
+  </button>
+)}
 
       <button
         type="button"

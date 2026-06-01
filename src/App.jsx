@@ -17,12 +17,12 @@ function PortfolioLanding() {
   return (
     <>
       <Navbar />
-      <div id="Home"><HomePage /></div>
-      <div id="About"><AboutMe /></div>
-      <div id="Skills"><SkillsSection /></div>
-      <div id="Projects"><Projects /></div>
-      <div id="Experience"><Experience /></div>
-      <div id="Contact"><Footer /></div>
+      <div id="Home" className="scroll-mt-20"><HomePage /></div>
+      <div id="About" className="scroll-mt-20"><AboutMe /></div>
+      <div id="Skills" className="scroll-mt-20"><SkillsSection /></div>
+      <div id="Projects" className="scroll-mt-20"><Projects /></div>
+      <div id="Experience" className="scroll-mt-20"><Experience /></div>
+      <div id="Contact" className="scroll-mt-20"><Footer /></div>
     </>
   );
 }

@@ -61,6 +61,7 @@ const ProjectDetailsContent: React.FC<ProjectDetailsContentProps> = ({
               isDark={isDark}
               liveUrl={project.link}
               githubUrl={project.github}
+              showDemo={project.showDemo}
             />
           </div>
         </div>

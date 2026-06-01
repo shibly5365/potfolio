@@ -19,7 +19,7 @@ export const projectsData: Project[] = [
       "MongoDB",
       "Tailwind CSS",
       "REST API",
-      "Git & GitHub"
+      "Git & GitHub",
     ],
 
     learning:
@@ -35,43 +35,70 @@ export const projectsData: Project[] = [
 
     initialViews: 1240,
     initialLikes: 342,
-    status: "Completed (Demo)"
+    status: "Coming Soon",
+    showDemo: false,
+    showDetails: false,
   },
 
   {
     id: 2,
-    title: "Hospital Management System",
+    title: "MediConnect Healthcare Platform",
+
     description:
-      "A demo hospital management platform for managing appointments, patient data, and doctor schedules.",
+      "A production-ready healthcare management platform featuring appointment scheduling, patient records, Google authentication, real-time chat, video consultations, and Redis-powered performance optimization.",
 
     about:
-      "This Hospital Management System is a demo project designed to simulate how hospitals manage patient records, doctor schedules, and appointments. The application includes basic dashboards for administrators and staff to manage hospital operations efficiently.",
+      "MediConnect Healthcare Platform is a production-ready healthcare management system designed to streamline hospital operations. The platform enables patients, doctors, and administrators to manage appointments, medical records, and consultations through a centralized dashboard. Key features include secure authentication using JWT and Google OAuth, real-time messaging powered by Socket.IO, video consultations using WebRTC, advanced state management with Redux and Zustand, and Redis caching for improved performance and scalability. The system was built with a focus on security, responsiveness, and seamless user experience.",
 
-    duration: "6 Weeks (Single Project)",
+    duration: "6 Weeks",
 
     tools: [
       "React",
+      "Redux",
+      "Zustand",
+      "Tailwind CSS",
+      "Node.js",
       "Express.js",
       "MySQL",
-      "Bootstrap",
+      "Socket.IO",
+      "WebRTC",
+      "Redis",
+      "JWT Authentication",
+      "Google OAuth",
       "REST API",
-      "JWT Authentication"
+      "Git",
+      "GitHub",
     ],
 
     learning:
-      "During this demo project I learned how to design structured backend APIs, manage relational database data with MySQL, and connect frontend applications to backend services.",
+      "This project provided hands-on experience in building a production-level healthcare platform. I implemented secure authentication using JWT and Google OAuth, managed complex application state with Redux and Zustand, developed responsive user interfaces using Tailwind CSS, integrated real-time communication with Socket.IO, built peer-to-peer video consultations using WebRTC, and optimized performance through Redis caching. I also improved my skills in REST API development, MySQL database management, scalable backend architecture, and full-stack application deployment.",
 
-    tags: ["React", "Express", "MySQL", "Bootstrap"],
+    tags: [
+      "React",
+      "Redux",
+      "Zustand",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MySQL",
+      "Socket.IO",
+      "WebRTC",
+      "Redis",
+      "Google OAuth",
+    ],
 
     image:
       "https://images.unsplash.com/photo-1587370560942-ad2a04eabb6d?q=80&w=1470&auto=format&fit=crop",
 
-    link: "#",
-    github: "#",
+    link: "YOUR_LIVE_URL",
+    github: "YOUR_GITHUB_URL",
 
     initialViews: 956,
     initialLikes: 215,
-    status: "Completed (Demo)"
+
+    status: "Completed",
+    showDemo: true,
+    showDetails: true,
   },
 
   {
@@ -91,7 +118,7 @@ export const projectsData: Project[] = [
       "PostgreSQL",
       "SaaS Architecture",
       "REST API",
-      "Tailwind CSS"
+      "Tailwind CSS",
     ],
 
     learning:
@@ -107,6 +134,8 @@ export const projectsData: Project[] = [
 
     initialViews: 2300,
     initialLikes: 567,
-    status: "Ongoing (Demo)"
-  }
+    status: "Ongoing",
+    showDemo: false,
+    showDetails: false,
+  },
 ];

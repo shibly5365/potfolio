@@ -36,15 +36,15 @@ const RoleTypewriter: React.FC<RoleTypewriterProps> = ({ isDark }) => {
           isDark ? "#fff" : "#222"
         };margin-left:4px;animation:blink 1s steps(2,start) infinite; }
       `}</style>
-      <div className="flex items-center text-4xl md:text-5xl font-semibold mt-2">
-        <span className="mr-3">I Am Into</span>
+      <div className="mt-1 flex w-full min-w-0 flex-col items-center gap-2 text-[clamp(1.45rem,7vw,3rem)] font-semibold leading-tight sm:flex-row sm:justify-center sm:gap-3 md:justify-start">
+        <span className="shrink-0 whitespace-nowrap">I Am Into</span>
         <motion.span
           key={currentRole}
+          className="inline-block max-w-full break-normal text-center [overflow-wrap:normal] sm:text-left"
           style={{
             background: roles[currentRole].color,
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
-            whiteSpace: "nowrap",
           }}
         >
           {displayedText}

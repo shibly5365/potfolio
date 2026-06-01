@@ -12,7 +12,9 @@ export interface Project {
   github: string;
   initialViews: number;
   initialLikes: number;
-  status: "Completed" | "Ongoing";
+  status: "Completed" | "Ongoing" | "Coming Soon";
+  showDemo: boolean;
+  showDetails: boolean;
 }
 
 export interface ProjectCardProps {

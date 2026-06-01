@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div
-      className={`relative flex flex-col md:flex-row items-center justify-between min-h-screen px-6 md:px-20 overflow-hidden transition-colors duration-300 ${
+      className={`relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden px-4 pb-12 pt-24 transition-colors duration-300 sm:px-6 md:flex-row md:justify-between md:px-12 md:py-20 lg:px-20 ${
         isDark ? "bg-[#0f002b]" : "bg-white"
       }`}
     >

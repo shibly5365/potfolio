@@ -1,7 +1,9 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { FaSun, FaMoon, FaBars, FaTimes } from "react-icons/fa";
 import { useTheme } from "../context/ThemeContext";
 import { motion as Motion, AnimatePresence } from "framer-motion";
+
+const navItems = ["Home", "About", "Skills", "Projects", "Experience", "Contact"];
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -9,21 +11,65 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const isDark = theme === "dark";
 
-  const navItems = ["Home", "About", "Skills", "Projects", "Experience", "Contact"];
+  useEffect(() => {
+    let ticking = false;
+
+    const updateActiveSection = () => {
+      ticking = false;
+
+      const viewportTarget = window.innerHeight * 0.42;
+      let currentSection = "Home";
+      let smallestDistance = Number.POSITIVE_INFINITY;
+
+      navItems.forEach((item) => {
+        const section = document.getElementById(item);
+        if (!section) return;
+
+        const rect = section.getBoundingClientRect();
+        const sectionTopDistance = Math.abs(rect.top - viewportTarget);
+        const sectionContainsTarget =
+          rect.top <= viewportTarget && rect.bottom >= viewportTarget;
+
+        if (sectionContainsTarget) {
+          currentSection = item;
+          smallestDistance = 0;
+          return;
+        }
+
+        if (sectionTopDistance < smallestDistance) {
+          smallestDistance = sectionTopDistance;
+          currentSection = item;
+        }
+      });
+
+      const nearPageBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8;
+
+      setActive(nearPageBottom ? "Contact" : currentSection);
+    };
+
+    const requestActiveUpdate = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(updateActiveSection);
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", requestActiveUpdate, { passive: true });
+    window.addEventListener("resize", requestActiveUpdate);
+
+    return () => {
+      window.removeEventListener("scroll", requestActiveUpdate);
+      window.removeEventListener("resize", requestActiveUpdate);
+    };
+  }, []);
 
   const handleNavClick = useCallback((item) => {
     setActive(item);
     setMobileMenuOpen(false);
-    // Simple scrolling logic
     const element = document.getElementById(item);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    } else if (item === 'Contact') {
-      // Contact often in footer, so scroll bottom or look for Contact ID
-      const footer = document.querySelector('footer');
-      if (footer) footer.scrollIntoView({ behavior: 'smooth' });
-    } else if (item === 'Home') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, []);
 

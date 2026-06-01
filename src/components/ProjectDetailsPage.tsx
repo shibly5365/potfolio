@@ -15,7 +15,7 @@ const ProjectDetailsPage: React.FC = () => {
   const selectedId = Number(projectId);
   const project = projectsData.find((item) => item.id === selectedId);
 
-  if (!project) {
+  if (!project || !project.showDetails) {
     return (
       <div
         className={`min-h-screen flex items-center justify-center px-6 ${
@@ -184,16 +184,18 @@ const ProjectDetailsPage: React.FC = () => {
 
             {/* BUTTONS */}
             <div className="flex flex-col sm:flex-row gap-3">
-              <button
-                onClick={() => handleExternalNavigate(project.link)}
-                className={`inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold ${
-                  isDark
-                    ? "bg-yellow-400 text-black hover:bg-yellow-300"
-                    : "bg-blue-600 text-white hover:bg-blue-700"
-                }`}
-              >
-                <FaExternalLinkAlt /> Live Demo
-              </button>
+              {project.showDemo && (
+                <button
+                  onClick={() => handleExternalNavigate(project.link)}
+                  className={`inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold ${
+                    isDark
+                      ? "bg-yellow-400 text-black hover:bg-yellow-300"
+                      : "bg-blue-600 text-white hover:bg-blue-700"
+                  }`}
+                >
+                  <FaExternalLinkAlt /> Live Demo
+                </button>
+              )}
 
               <button
                 onClick={() => handleExternalNavigate(project.github)}

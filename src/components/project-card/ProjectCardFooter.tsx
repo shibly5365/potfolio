@@ -8,6 +8,7 @@ interface ProjectCardFooterProps {
   likes: string;
   views: string;
   title: string;
+  showDetails: boolean;
   onLike: (e: React.MouseEvent) => void;
   onOpenDetails: () => void;
 }
@@ -18,6 +19,7 @@ const ProjectCardFooter: React.FC<ProjectCardFooterProps> = ({
   likes,
   views,
   title,
+  showDetails,
   onLike,
   onOpenDetails,
 }) => {
@@ -55,21 +57,23 @@ const ProjectCardFooter: React.FC<ProjectCardFooterProps> = ({
         </div>
       </div>
 
-      <motion.button
-        whileHover={{ scale: 1.08 }}
-        whileTap={{ scale: 0.92 }}
-        onClick={onOpenDetails}
-        className={`p-2.5 rounded-full transition-colors ${
-          isDark
-            ? "bg-white/10 text-yellow-300 hover:bg-white/20"
-            : "bg-blue-50 text-blue-600 hover:bg-blue-100"
-        }`}
-        title="View project details"
-        aria-label={`View details for ${title}`}
-        type="button"
-      >
-        <FaInfoCircle size={18} />
-      </motion.button>
+      {showDetails && (
+        <motion.button
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.92 }}
+          onClick={onOpenDetails}
+          className={`p-2.5 rounded-full transition-colors ${
+            isDark
+              ? "bg-white/10 text-yellow-300 hover:bg-white/20"
+              : "bg-blue-50 text-blue-600 hover:bg-blue-100"
+          }`}
+          title="View project details"
+          aria-label={`View details for ${title}`}
+          type="button"
+        >
+          <FaInfoCircle size={18} />
+        </motion.button>
+      )}
     </div>
   );
 };

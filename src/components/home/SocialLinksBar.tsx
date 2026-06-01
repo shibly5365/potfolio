@@ -25,7 +25,7 @@ const SocialLinksBar: React.FC<SocialLinksBarProps> = ({ isDark }) => {
   }, [hoveredIcon]);
 
   return (
-    <div className="flex space-x-4 mt-6">
+    <div className="mt-4 flex w-full max-w-xs flex-wrap items-center justify-center gap-3 sm:max-w-none sm:gap-4 md:justify-start">
       {socialLinks.map((social, index) => (
         <div
           key={index}
@@ -36,7 +36,7 @@ const SocialLinksBar: React.FC<SocialLinksBarProps> = ({ isDark }) => {
           <button
             type="button"
             onClick={() => window.location.assign(social.url)}
-            className={`w-12 h-12 flex items-center justify-center rounded-full text-2xl transition-colors ${
+            className={`flex h-11 w-11 items-center justify-center rounded-full text-xl transition-colors sm:h-12 sm:w-12 sm:text-2xl ${
               isDark ? "bg-[#181a23] hover:bg-gray-800" : "bg-gray-200 hover:bg-gray-300"
             }`}
             style={{
@@ -54,7 +54,7 @@ const SocialLinksBar: React.FC<SocialLinksBarProps> = ({ isDark }) => {
                 animate={{ opacity: 1, y: 10 }}
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.3 }}
-                className={`absolute top-16 text-sm font-medium px-3 py-1 rounded ${
+                className={`absolute top-14 z-20 whitespace-nowrap rounded px-3 py-1 text-sm font-medium sm:top-16 ${
                   isDark
                     ? "text-[#21c396] bg-[rgba(24,26,35,0.7)]"
                     : "text-blue-600 bg-white shadow-md"

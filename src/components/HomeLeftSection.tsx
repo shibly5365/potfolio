@@ -13,7 +13,7 @@ const HomeLeftSection: React.FC<HomeLeftSectionProps> = ({ isDark }) => {
 
   return (
     <div
-      className={`md:w-1/2 z-10 pl-6 md:pl-16 pt-20 space-y-10 transition-colors duration-300 ${
+      className={`z-10 flex w-full min-w-0 flex-col items-center space-y-6 text-center transition-colors duration-300 sm:space-y-7 md:w-1/2 md:items-start md:pl-6 md:text-left lg:pl-16 ${
         isDark ? "text-white" : "text-[#181a23]"
       }`}
     >
@@ -21,7 +21,7 @@ const HomeLeftSection: React.FC<HomeLeftSectionProps> = ({ isDark }) => {
         initial={{ y: 80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="text-5xl md:text-6xl font-extrabold"
+        className="w-full break-normal text-[clamp(2.15rem,10vw,3.75rem)] font-extrabold leading-[1.08] tracking-normal [overflow-wrap:normal]"
       >
         Hi There,
       </motion.h1>
@@ -29,7 +29,7 @@ const HomeLeftSection: React.FC<HomeLeftSectionProps> = ({ isDark }) => {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
-        className="text-6xl md:text-7xl font-bold leading-tight"
+        className="w-full max-w-[11ch] break-normal text-[clamp(2.45rem,11vw,4.5rem)] font-bold leading-[1.05] tracking-normal [overflow-wrap:normal] sm:max-w-none"
       >
         I'm Nuhman <span className="text-orange-400">Shibly</span>
       </motion.h2>
@@ -47,7 +47,7 @@ const HomeLeftSection: React.FC<HomeLeftSectionProps> = ({ isDark }) => {
             aboutSection.scrollIntoView({ behavior: "smooth" });
           }
         }}
-        className={`relative flex items-center mt-6 px-8 py-4 rounded-2xl shadow-xl ${
+        className={`relative mt-2 flex max-w-full items-center justify-center rounded-2xl px-6 py-3.5 text-sm font-semibold shadow-xl sm:px-8 sm:py-4 sm:text-base ${
           isDark
             ? "bg-[#1717c6] text-white"
             : "bg-blue-600 text-white hover:bg-blue-700"

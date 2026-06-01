@@ -67,6 +67,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   };
 
   const handleOpenDetails = () => {
+    if (!project.showDetails) return;
+
     if (onSelect) {
       onSelect(project);
       return;
@@ -133,6 +135,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           likes={formatCount(likes)}
           views={formatCount(views)}
           title={project.title}
+          showDetails={project.showDetails}
           onLike={handleLike}
           onOpenDetails={handleOpenDetails}
         />
