@@ -31,7 +31,7 @@ export const projectsData: Project[] = [
       "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1470&auto=format&fit=crop",
 
     link: "#",
-    github: "https://github.com/shibly5365?tab=repositories",
+    github: "https://github.com/shibly5365",
 
     initialViews: 1240,
     initialLikes: 342,
@@ -90,8 +90,8 @@ export const projectsData: Project[] = [
     image:
       "https://images.unsplash.com/photo-1587370560942-ad2a04eabb6d?q=80&w=1470&auto=format&fit=crop",
 
-    link: "YOUR_LIVE_URL",
-    github: "YOUR_GITHUB_URL",
+    link: "https://hospital-front-end-delta.vercel.app/",
+    github: "https://github.com/shibly5365/HospitalFrontEnd",
 
     initialViews: 956,
     initialLikes: 215,
@@ -130,7 +130,7 @@ export const projectsData: Project[] = [
       "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1470&auto=format&fit=crop",
 
     link: "#",
-    github: "#",
+    github: "https://github.com/shibly5365",
 
     initialViews: 2300,
     initialLikes: 567,
