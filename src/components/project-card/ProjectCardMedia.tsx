@@ -36,7 +36,9 @@ const ProjectCardMedia: React.FC<ProjectCardMediaProps> = ({
         {project.status}
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
+     <div
+  className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4"
+>
         {project.showDetails && (
           <motion.button
             whileHover={{ scale: 1.15 }}
