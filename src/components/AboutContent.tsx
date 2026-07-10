@@ -82,7 +82,7 @@ const AboutContent: React.FC<AboutContentProps> = ({ isDark }) => {
 
         {/* Resume Button */}
         <a
-          href="/Nuhman-Shibly-Mern-Stack-Developer.pdf"
+          href="/Nuhmanu_Ibnu_Shibly_Resume .pdf"
           className="inline-flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-12 py-4 rounded-lg font-semibold text-lg shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 group"
         >
           Resume
