@@ -1,5 +1,5 @@
 import dineflowImage from "@/assets/dineflow-concept.jpg";
-import healthcareShot from "@/assets/healthcare-pro.jpg.asset.json";
+import healthcareConcept from "@/assets/healthcarePro.png";
 import type { Project } from "@/types/portfolio";
 
 /**
@@ -130,11 +130,11 @@ export const projects: Project[] = [
       { label: "Backend repo", href: "https://github.com/shibly5365/HospitalBackEnd", kind: "github" },
     ],
     image: {
-      src: healthcareShot.url,
-      alt: "Screenshot of the Healthcare Pro (MediCare Pro) landing page with appointment booking call to action",
+      src: healthcareConcept,
+      alt: "Illustrated Healthcare Pro hospital dashboard with appointment scheduling, doctor cards, patient statistics, a calendar, and video consultation",
       width: 1440,
       height: 900,
-      isScreenshot: true,
+      isScreenshot: false,
     },
   },
   {

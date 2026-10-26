@@ -11,7 +11,9 @@ import { cn } from "@/lib/utils";
 
 export function FeaturedProjectCard({ project, index, reverse }: { project: Project; index: number; reverse: boolean }) {
   const [open, setOpen] = useState(false);
+  
   const panelId = useId();
+  console.log(project)
   const live = project.links.find((l) => l.kind === "live");
   const repos = project.links.filter((l) => l.kind === "github");
 

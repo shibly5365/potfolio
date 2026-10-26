@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="45" x2="1360" y2="870" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF7F8"/>
+      <stop offset="1" stop-color="#E8F1FC"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="1050" y1="100" x2="1270" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22B8AE"/>
+      <stop offset="1" stop-color="#168F9D"/>
+    </linearGradient>
+    <filter id="shadow" x="130" y="55" width="1180" height="810" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="16"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0.12 0 0 0 0 0.25 0 0 0 0 0.38 0 0 0 0.12 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1440" height="900" rx="36" fill="url(#bg)"/>
+  <circle cx="1254" cy="111" r="124" fill="#D3F1EE" opacity=".75"/>
+  <circle cx="141" cy="789" r="168" fill="#D7E9FC" opacity=".8"/>
+  <g filter="url(#shadow)">
+    <rect x="184" y="94" width="1072" height="704" rx="24" fill="white"/>
+    <path d="M208 94h220v704H208a24 24 0 0 1-24-24V118a24 24 0 0 1 24-24Z" fill="#F7FAFC"/>
+    <path d="M428 94v704" stroke="#E8EEF3"/>
+    <rect x="211" y="124" width="34" height="34" rx="11" fill="url(#teal)"/>
+    <path d="M228 131v20m-10-10h20" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <text x="255" y="147" fill="#17324A" font-family="Arial,sans-serif" font-size="19" font-weight="700">MediCare<tspan fill="#1AA99F"> Pro</tspan></text>
+    <text x="211" y="200" fill="#9AAAB7" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1.6">WORKSPACE</text>
+    <rect x="201" y="215" width="202" height="44" rx="10" fill="#E5F5F4"/>
+    <rect x="215" y="227" width="18" height="18" rx="5" fill="#21AAA5"/>
+    <path d="M220 231h8v10h-8zM218 234h2m8 0h2m-10 4h2m8 0h2" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="244" y="243" fill="#167F83" font-family="Arial,sans-serif" font-size="13" font-weight="700">Overview</text>
+    <g fill="#607586" font-family="Arial,sans-serif" font-size="13">
+      <rect x="217" y="279" width="15" height="15" rx="4" stroke="#8295A4" stroke-width="1.6"/>
+      <path d="M220 286h9m-6-4v8" stroke="#8295A4" stroke-width="1.4" stroke-linecap="round"/>
+      <text x="245" y="291">Appointments</text>
+      <circle cx="224" cy="326" r="7" stroke="#8295A4" stroke-width="1.5"/><path d="M213 343c1-6 5-9 11-9s10 3 11 9" stroke="#8295A4" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="245" y="330">Doctors</text>
+      <path d="M218 367h13v15h-13zM221 364h7" stroke="#8295A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="245" y="379">Patients</text>
+      <path d="M217 414h15m-15 5h15m-15 5h10" stroke="#8295A4" stroke-width="1.6" stroke-linecap="round"/>
+      <text x="245" y="424">Messages</text>
+    </g>
+    <rect x="211" y="709" width="190" height="61" rx="12" fill="white" stroke="#E8EEF3"/>
+    <circle cx="234" cy="739" r="15" fill="#DBF2F0"/>
+    <path d="M230 740a4 4 0 1 1 8 0v4h-8v-4Zm4-7v-2m-7 4-2-1m16 1 2-1" stroke="#168F91" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="258" y="736" fill="#243E52" font-family="Arial,sans-serif" font-size="11" font-weight="700">Dr. Maya Chen</text>
+    <text x="258" y="752" fill="#91A0AC" font-family="Arial,sans-serif" font-size="10">Administrator</text>
+    <text x="462" y="143" fill="#18344A" font-family="Arial,sans-serif" font-size="22" font-weight="700">Good morning, Maya</text>
+    <text x="462" y="166" fill="#8192A0" font-family="Arial,sans-serif" font-size="12">Here’s what’s happening at your clinic today.</text>
+    <rect x="1082" y="119" width="142" height="38" rx="10" fill="#F5F8FA" stroke="#E7EDF1"/>
+    <circle cx="1101" cy="138" r="7" stroke="#8295A4" stroke-width="1.5"/><path d="m1106 143 5 5" stroke="#8295A4" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="1118" y="142" fill="#98A6B1" font-family="Arial,sans-serif" font-size="11">Search...</text>
+    <circle cx="1191" cy="138" r="18" fill="#EDF4F8"/><path d="M1184 139c0-5 3-8 7-8s7 3 7 8v5l2 3h-18l2-3v-5Z" stroke="#627A8B" stroke-width="1.4" stroke-linejoin="round"/><circle cx="1198" cy="126" r="4" fill="#F37D72" stroke="white" stroke-width="2"/>
+    <rect x="462" y="193" width="231" height="100" rx="14" fill="#F5FBFB" stroke="#E7F0F1"/>
+    <circle cx="490" cy="221" r="13" fill="#DDF4F0"/><path d="M490 214v14m-7-7h14" stroke="#19A79E" stroke-width="2" stroke-linecap="round"/>
+    <text x="482" y="260" fill="#8293A0" font-family="Arial,sans-serif" font-size="11">Appointments today</text>
+    <text x="482" y="281" fill="#18374D" font-family="Arial,sans-serif" font-size="22" font-weight="700">24</text>
+    <text x="519" y="280" fill="#1AA89F" font-family="Arial,sans-serif" font-size="10" font-weight="700">+8.2%</text>
+    <rect x="707" y="193" width="231" height="100" rx="14" fill="#F5F8FD" stroke="#E8EDF4"/>
+    <circle cx="735" cy="221" r="13" fill="#E2EAFC"/><path d="M729 224c1-5 3-7 6-7s5 2 6 7m-12 0h12m-10-10h8" stroke="#637FD0" stroke-width="1.4" stroke-linecap="round"/>
+    <text x="727" y="260" fill="#8293A0" font-family="Arial,sans-serif" font-size="11">Active patients</text>
+    <text x="727" y="281" fill="#18374D" font-family="Arial,sans-serif" font-size="22" font-weight="700">1,284</text>
+    <text x="785" y="280" fill="#1AA89F" font-family="Arial,sans-serif" font-size="10" font-weight="700">+12.4%</text>
+    <rect x="952" y="193" width="272" height="100" rx="14" fill="#F5FBF8" stroke="#E7F0EB"/>
+    <circle cx="980" cy="221" r="13" fill="#E1F2E8"/><path d="M975 226v-8m5 8v-13m5 13v-5" stroke="#3DAB75" stroke-width="2" stroke-linecap="round"/>
+    <text x="972" y="260" fill="#8293A0" font-family="Arial,sans-serif" font-size="11">Consultations completed</text>
+    <text x="972" y="281" fill="#18374D" font-family="Arial,sans-serif" font-size="22" font-weight="700">18</text>
+    <text x="1003" y="280" fill="#1AA89F" font-family="Arial,sans-serif" font-size="10" font-weight="700">On track</text>
+    <rect x="462" y="315" width="474" height="252" rx="15" fill="white" stroke="#E7EDF1"/>
+    <text x="481" y="345" fill="#1D394E" font-family="Arial,sans-serif" font-size="14" font-weight="700">Appointment schedule</text>
+    <text x="481" y="363" fill="#94A2AD" font-family="Arial,sans-serif" font-size="10">Your next patients today</text>
+    <rect x="844" y="328" width="73" height="27" rx="7" fill="#F2F7F9"/><text x="858" y="345" fill="#61798B" font-family="Arial,sans-serif" font-size="10" font-weight="700">View all</text>
+    <path d="M481 379h436" stroke="#EDF1F4"/>
+    <g font-family="Arial,sans-serif">
+      <text x="481" y="403" fill="#81929F" font-size="10">09:30</text><circle cx="537" cy="399" r="13" fill="#FDE9DF"/><text x="556" y="396" fill="#2B4354" font-size="11" font-weight="700">Olivia Martinez</text><text x="556" y="411" fill="#91A0AC" font-size="9">Cardiology · Follow-up</text><rect x="829" y="388" width="79" height="22" rx="11" fill="#E9F7F4"/><text x="845" y="403" fill="#178F83" font-size="9" font-weight="700">Confirmed</text>
+      <path d="M481 424h436" stroke="#F0F3F5"/>
+      <text x="481" y="449" fill="#81929F" font-size="10">10:15</text><circle cx="537" cy="445" r="13" fill="#E3ECFB"/><text x="556" y="442" fill="#2B4354" font-size="11" font-weight="700">Noah Williams</text><text x="556" y="457" fill="#91A0AC" font-size="9">General medicine · Checkup</text><rect x="829" y="434" width="79" height="22" rx="11" fill="#E9F7F4"/><text x="845" y="449" fill="#178F83" font-size="9" font-weight="700">Confirmed</text>
+      <path d="M481 470h436" stroke="#F0F3F5"/>
+      <text x="481" y="495" fill="#81929F" font-size="10">11:00</text><circle cx="537" cy="491" r="13" fill="#F5E7F6"/><text x="556" y="488" fill="#2B4354" font-size="11" font-weight="700">Ava Thompson</text><text x="556" y="503" fill="#91A0AC" font-size="9">Dermatology · Consultation</text><rect x="829" y="480" width="79" height="22" rx="11" fill="#FFF4E6"/><text x="844" y="495" fill="#B7802F" font-size="9" font-weight="700">Pending</text>
+      <path d="M481 516h436" stroke="#F0F3F5"/>
+      <text x="481" y="541" fill="#81929F" font-size="10">11:30</text><circle cx="537" cy="537" r="13" fill="#E1F2EC"/><text x="556" y="534" fill="#2B4354" font-size="11" font-weight="700">Ethan Brooks</text><text x="556" y="549" fill="#91A0AC" font-size="9">Orthopedics · Follow-up</text><rect x="829" y="526" width="79" height="22" rx="11" fill="#E9F7F4"/><text x="845" y="541" fill="#178F83" font-size="9" font-weight="700">Confirmed</text>
+    </g>
+    <rect x="952" y="315" width="272" height="252" rx="15" fill="white" stroke="#E7EDF1"/>
+    <text x="970" y="345" fill="#1D394E" font-family="Arial,sans-serif" font-size="14" font-weight="700">October 2026</text>
+    <rect x="1173" y="327" width="33" height="25" rx="7" fill="#F2F7F9"/><path d="m1186 335-4 4 4 4m7-8 4 4-4 4" stroke="#708596" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#9AA8B2" font-family="Arial,sans-serif" font-size="9" text-anchor="middle"><text x="982" y="382">M</text><text x="1017" y="382">T</text><text x="1052" y="382">W</text><text x="1087" y="382">T</text><text x="1122" y="382">F</text><text x="1157" y="382">S</text><text x="1192" y="382">S</text></g>
+    <g fill="#526A7B" font-family="Arial,sans-serif" font-size="10" text-anchor="middle"><text x="982" y="411">28</text><text x="1017" y="411">29</text><text x="1052" y="411">30</text><text x="1087" y="411">1</text><text x="1122" y="411">2</text><text x="1157" y="411">3</text><text x="1192" y="411">4</text><text x="982" y="446">5</text><text x="1017" y="446">6</text><text x="1052" y="446">7</text><text x="1087" y="446">8</text><text x="1122" y="446">9</text><text x="1157" y="446">10</text><text x="1192" y="446">11</text><text x="982" y="481">12</text><text x="1017" y="481">13</text><text x="1052" y="481">14</text><text x="1087" y="481">15</text><text x="1122" y="481">16</text><text x="1157" y="481">17</text><text x="1192" y="481">18</text><text x="982" y="516">19</text><text x="1017" y="516">20</text><text x="1052" y="516">21</text><text x="1087" y="516">22</text><text x="1122" y="516">23</text><text x="1157" y="516">24</text><text x="1192" y="516">25</text><text x="982" y="551">26</text><text x="1017" y="551">27</text><text x="1052" y="551">28</text><text x="1087" y="551">29</text><text x="1122" y="551">30</text><text x="1157" y="551">31</text><text x="1192" y="551">1</text></g>
+    <circle cx="1122" cy="442" r="15" fill="#E9F7F5"/><circle cx="1122" cy="442" r="12" fill="#1BA79E"/><text x="1122" y="446" fill="white" font-family="Arial,sans-serif" font-size="10" font-weight="700" text-anchor="middle">9</text>
+    <circle cx="1052" cy="477" r="3" fill="#F08A7F"/><circle cx="1157" cy="512" r="3" fill="#5B91DC"/><circle cx="1087" cy="547" r="3" fill="#1BA79E"/>
+    <rect x="462" y="587" width="474" height="184" rx="15" fill="white" stroke="#E7EDF1"/>
+    <text x="481" y="617" fill="#1D394E" font-family="Arial,sans-serif" font-size="14" font-weight="700">Your doctors</text>
+    <text x="481" y="635" fill="#94A2AD" font-family="Arial,sans-serif" font-size="10">Available for consultations</text>
+    <rect x="482" y="654" width="210" height="95" rx="11" fill="#F8FBFC" stroke="#EDF1F3"/>
+    <circle cx="512" cy="685" r="18" fill="#DDECF8"/><circle cx="512" cy="680" r="6" fill="#A9C3D8"/><path d="M500 695c2-7 6-10 12-10s10 3 12 10" fill="#88AFCB"/>
+    <text x="540" y="680" fill="#273F51" font-family="Arial,sans-serif" font-size="10" font-weight="700">Dr. James Wilson</text><text x="540" y="695" fill="#8496A3" font-family="Arial,sans-serif" font-size="9">Cardiologist</text><circle cx="500" cy="725" r="3" fill="#39B47A"/><text x="509" y="729" fill="#728797" font-family="Arial,sans-serif" font-size="9">Available</text><text x="651" y="729" fill="#6B8ED0" font-family="Arial,sans-serif" font-size="9">4.9 ★</text>
+    <rect x="706" y="654" width="210" height="95" rx="11" fill="#F8FBFC" stroke="#EDF1F3"/>
+    <circle cx="736" cy="685" r="18" fill="#F4E6E1"/><circle cx="736" cy="680" r="6" fill="#D8B5A8"/><path d="M724 695c2-7 6-10 12-10s10 3 12 10" fill="#C79C8C"/>
+    <text x="764" y="680" fill="#273F51" font-family="Arial,sans-serif" font-size="10" font-weight="700">Dr. Sofia Patel</text><text x="764" y="695" fill="#8496A3" font-family="Arial,sans-serif" font-size="9">Neurologist</text><circle cx="724" cy="725" r="3" fill="#39B47A"/><text x="733" y="729" fill="#728797" font-family="Arial,sans-serif" font-size="9">Available</text><text x="875" y="729" fill="#6B8ED0" font-family="Arial,sans-serif" font-size="9">4.8 ★</text>
+    <rect x="952" y="587" width="272" height="184" rx="15" fill="#F7FAFC" stroke="#E7EDF1"/>
+    <text x="971" y="617" fill="#1D394E" font-family="Arial,sans-serif" font-size="14" font-weight="700">Video consultation</text>
+    <text x="971" y="635" fill="#94A2AD" font-family="Arial,sans-serif" font-size="10">Upcoming · 10:15 AM</text>
+    <rect x="970" y="650" width="236" height="102" rx="11" fill="url(#teal)"/>
+    <circle cx="1088" cy="688" r="23" fill="#D9F1EF" opacity=".96"/><circle cx="1088" cy="681" r="7" fill="#84B8B5"/><path d="M1074 699c2-8 7-12 14-12s12 4 14 12" fill="#5FA4A1"/>
+    <circle cx="990" cy="668" r="3" fill="#A1F1D0"/><text x="999" y="671" fill="white" font-family="Arial,sans-serif" font-size="8" font-weight="700">DOCTOR ONLINE</text>
+    <rect x="1069" y="719" width="38" height="22" rx="11" fill="white" opacity=".2"/><path d="M1081 726v8l7-4-7-4Zm10 0v8" stroke="white" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <rect x="90" y="830" width="1260" height="1" fill="#C8DDE7" opacity=".65"/>
+</svg>
