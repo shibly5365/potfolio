@@ -17,8 +17,9 @@ export interface SiteConfig {
   tagline: string;
   location: string;
   email: string;
-  /** Leave empty to hide the phone number everywhere. */
+  /** Leave empty to hide the phone number everywhere. */                   
   phone: string;
+  uaePhone:string;
   resumeUrl: string;
   resumeFileName: string;
   socials: SocialLink[];

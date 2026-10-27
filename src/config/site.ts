@@ -16,7 +16,8 @@ export const site: SiteConfig = {
   tagline: "Full stack engineering — from interface to API to database.",
   location: "Calicut, Kerala, India",
   email: "nuhmanushibly@gmail.com",
-  phone: "+91 7592933286",
+  phone: "🇮🇳 +91 7592933286",
+  uaePhone: "🇦🇪 +971 526553221",
   resumeUrl: resumeAsset.url,
   resumeFileName: "Nuhman-Shibly-Mern-Stack-Developer.pdf",
   socials: [
@@ -58,7 +59,7 @@ export const site: SiteConfig = {
   availability: {
     open: true,
     statusLabel: "Open to opportunities",
-    preferredLocations: ["Dubai, UAE", "Kerala", "Bangalore","Chennai"],
+    preferredLocations: ["Dubai, UAE", "Kerala", "Bangalore", "Chennai"],
     willingToRelocate: true,
     note: "Currently based in India. Open to relevant software development roles in the UAE and willing to relocate.",
   },

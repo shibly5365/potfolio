@@ -180,13 +180,27 @@ export function Contact() {
               </span>
             </div>
             {site.phone ? (
-              <div className="rounded-2xl border border-border bg-card p-6">
-                <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Phone</p>
-                <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="mt-2 flex items-center gap-2 font-display text-lg text-foreground hover:text-highlight">
-                  <Phone aria-hidden className="size-4 text-highlight" />
-                  {site.phone}
-                </a>
-              </div>
+<div className="rounded-2xl border border-border bg-card p-6">
+  <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
+    Phone
+  </p>
+
+  <a
+    href="tel:+917592933286"
+    className="mt-3 flex items-center gap-2 font-display text-lg text-foreground hover:text-highlight"
+  >
+    <Phone aria-hidden className="size-4 shrink-0 text-highlight" />
+    🇮🇳 +91 7592933286
+  </a>
+
+  <a
+    href="tel:+971526553221"
+    className="mt-3 flex items-center gap-2 font-display text-lg text-foreground hover:text-highlight"
+  >
+    <Phone aria-hidden className="size-4 shrink-0 text-highlight" />
+    🇦🇪 +971 526553221
+  </a>
+</div>
             ) : null}
             <div className="grid grid-cols-2 gap-3">
               {[
